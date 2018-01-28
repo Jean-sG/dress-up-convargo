@@ -16,6 +16,15 @@ html {
 body {
 	font-family: montserrat, arial, verdana;
 }
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
 /*form styles*/
 #msform {
 	width: 400px;
@@ -35,6 +44,10 @@ body {
 	
 	/*stacking fieldsets above each other*/
 	position: relative;
+}
+
+.contenair{
+    margin-top: 20px;
 }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
@@ -75,10 +88,18 @@ body {
 	margin-bottom: 10px;
 }
 .fs-subtitle {
+    text-align: left;
 	font-weight: normal;
 	font-size: 13px;
 	color: #666;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+.fs-label {
+    text-align: left;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	margin-bottom: 5px;
 }
 /*progressbar*/
 #progressbar {

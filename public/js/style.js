@@ -80,3 +80,7 @@ $(".previous").click(function(){
 $(".submit").click(function(){
 	return false;
 })
+
+$(".clear").click(function(){
+	     document.getElementById("msform").reset(); 
+})

@@ -7,11 +7,12 @@
     const div = document.createElement('div');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
-        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">The ${actor.who} </li>
+          <li class="list-inline-item">${actor.type} : </li>
+          <li class="list-inline-item"> ${Math.round(1000 * actor.amount) / 1000} </li>
+        </ul>
+</BR>
       `;
     }).join('');
 
@@ -35,3 +36,4 @@
     return;
   });
 })();
+

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
     <title>CSS/HTML Workshop with Convargo</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      
       <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,29 +17,41 @@
   </ul>
   <!-- fieldsets -->
   <fieldset>
-    <h2 class="fs-title">Enter the values to calcul</h2>
-    <h3 class="fs-subtitle">This is step 1</h3>
-    <div id="trucker">
+    <h2 class="fs-title">Welcome to convargo app</h2>
+      <p></p>
+    <div id="trucker" class="contenair">
+        <h3 class="fs-subtitle">Enter trucker's values :</h3>
+      <label class="fs-label">Trucker name</label>
       <input class="name" type="text" placeholder="Trucker name"/>
+              <label class="fs-label">Price by km</label>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
+        <label class="fs-label">Price by m3</label>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
     </div>
-    <div id="shipper">
+      <hr>
+    <div id="shipper" class="contenair">
+        <h3 class="fs-subtitle">Enter shipper's values :</h3>
+        <label class="fs-label">Shipper name</label>
       <input class="name" type="text" placeholder="Shipper name"/>
+        <label class="fs-label">Distance in km</label>
       <input class="distance" type="number" placeholder="Distance in km"/>
+        <label class="fs-label">Volume in m3</label>
       <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+        <label for="deductibleoption" class="fs-label">Add a deductible option</label>
+      <input id="deductibleoption" class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
       
-    <input type="button" name="next" class="next action-button" value="Next" />
+    <input type="button"  id="compute" name="next" class="next action-button" value="Next" />
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Results</h2>
     <h3 class="fs-subtitle">Step 2</h3>
-        <div id="actors"></div>
+        <div id="actors">
+      
+      </div>
     <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+      <input type="button" value="Clear" class="clear previous action-button" />
+    
   </fieldset>
 </form>
       
